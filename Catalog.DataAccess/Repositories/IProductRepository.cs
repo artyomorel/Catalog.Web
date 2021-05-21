@@ -4,5 +4,6 @@ namespace Catalog.DataAccess.Repositories
 {
     public interface IProductRepository : IRepository<Product>
     {
+        
     }
 }

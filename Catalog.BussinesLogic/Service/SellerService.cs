@@ -25,5 +25,17 @@ namespace Catalog.Service.Service
             });
             return response;
         }
+
+        public async Task<Response> DeleteSellerAsync(int id)
+        {
+            var response = await _mediator.Send(new DeleteSellerCommand(id));
+            return response;
+        }
+
+        public async Task<Seller> UpdateSellerAsync(Seller seller)
+        {
+           return await _mediator.Send(new UpdateSellerCommand(seller));
+        }
     }
+    
 }

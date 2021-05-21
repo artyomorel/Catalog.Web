@@ -1,7 +1,4 @@
 ﻿namespace Catalog.Service.Models
 {
-    public class Response
-    {
-        public bool Success { get; set; }
-    }
+    public record Response(bool Success);
 }

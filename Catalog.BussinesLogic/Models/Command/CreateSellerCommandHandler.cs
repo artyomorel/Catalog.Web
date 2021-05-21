@@ -19,11 +19,11 @@ namespace Catalog.Service.Models.Command
             try
             {
                 await _repository.AddAsync(request.Seller);
-                return new Response {Success = true};
+                return new Response(true);
             }
             catch
             {
-                return new Response {Success = false};
+                return new Response(false);
             }
             
             

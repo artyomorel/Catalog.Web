@@ -6,5 +6,7 @@ namespace Catalog.DataAccess.Repositories
     public interface ISellerRepository: IRepository<Seller>
     {
         Task<Seller> GetSellerById(int id);
+
+        Task<bool> DeleteById(int id);
     }
 }
